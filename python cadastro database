@@ -1,0 +1,48 @@
+In progress...
+
+class cadastro(object):
+    def __init__(self, primeironome, sobrenome, idade,CPF):
+        self.primeironome = input('Digite o primeiro nome: ')
+        self.sobrenome =    input('Digite o sobrenome    : ')
+        self.idade =  float(input('Digite sua idade      : '))
+        self.CPF =    float(input('Digite seu CPF        : '))
+        
+        self.nomecompleto = self.primeironome +  self.sobrenome 
+        
+
+    def Idade(self, idade):
+        for n in range(False):
+            if self.idade <= 17:
+                print("Sua idade não é compativel com as diretrizes! Sr(a): ", self.nomecompleto)
+                break
+
+            elif self.idade > 17:
+                print('Continue')
+
+        
+         
+    def cadastroemail(self, email,senha):
+        
+    
+        self.email =   input('Digite seu e-mail: ')
+        self.senha = str(input('Crie sua senha: '))
+        
+        for c in range(True):
+            if senha != cadastro:
+                print('continue')
+
+            elif senha == cadastro:
+                print('Senha invalida sr(a): ', cadastro)
+                quit(senha)
+        
+
+
+
+    def cadastroendereco(self,estado, cidade, bairro, rua ):
+        self.estado =       input('Digite o seu estado   : ')
+        self.cidade =       input('Digite sua cidade     : ')
+        self.bairro =       input('Digite seu bairro     : ')
+        self.rua    =       input('Digite seu endereço   : ')
+        
+        regiao = self.estado +  self.cidade + self.bairro + self.rua 
+        print('Bem vindo ', cadastro ,'do estado, cidade , bairro e rua : ', regiao )
